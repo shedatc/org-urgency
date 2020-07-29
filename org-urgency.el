@@ -55,6 +55,20 @@
 ;; | Total       |             |                       | 21.00 |
 ;; #+END
 
+;;; Missing Features and Known Issues
+
+;;;; Automatically updating urgency on TODO entry modification
+
+;; | Property       | Candidates Hooks                 | Candidates Functions to advice          |
+;; |----------------+----------------------------------+-----------------------------------------|
+;; | Priority       |                                  | org-priority                            |
+;; | Deadline       |                                  | org-deadline                            |
+;; | Activity       | org-after-todo-state-change-hook | org-todo                                |
+;; | Age            |                                  | org-time-stamp                          |
+;; | Tags           | org-after-tags-change-hook       | org-tag                                 |
+;; | Blocking Tasks |                                  | org-set-property, org-entry-put         |
+;; | Blocked Tasks  |                                  | org-set-property, org-entry-put         |
+
 ;;; Credits:
 
 ;; This package is inspired by Taskwarrior [1] originaly written by Paul Beckingham.
